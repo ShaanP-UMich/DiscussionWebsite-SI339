@@ -1,0 +1,25 @@
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    width: 90%;
+    border: black dashed 3px;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0px 10px;
+}
+
+main img {
+    box-sizing: border-box;
+    border: 6px dashed green;
+    padding: 15px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery img:last-child {
+    grid-column: 1/ span 3;
+}
